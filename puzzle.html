@@ -1,0 +1,318 @@
+<html>
+  <head>
+    <title>Detective</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="puzzle.css" />
+    <link rel="stylesheet" href="navbarfooter.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item col-2">
+              <a
+                class="nav-link fw-bolder fs-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item col-4">
+              <a class="nav-link fw-bolder fs-5" href="detective.html"
+                >Detective Novelist</a
+              >
+            </li>
+
+            <li class="nav-item col-3">
+              <a class="nav-link fw-bolder fs-5" href="fingerprint.html"
+                >Fingerprints</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder active fs-5" href="puzzle.html"
+                >Puzzle</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="shop.html">Shop</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="report.html">Report</a>
+            </li>
+          </ul>
+
+          <audio class="bgm" controls>
+            <source src="BGM.mp3" type="audio/mpeg" />
+          </audio>
+
+          <button id="openSidebarBtn">Settings</button>
+
+          <div id="sidebar" class="bg-dark">
+            <div class="sidebar-content">
+              <p>Accessibility Settings</p>
+              <button id="mode-toggle">Dark/Light Mode</button>
+            </div>
+
+            <label class="text" for="brightness">Page Brightness</label>
+            <div class="container">
+              <input
+                class="centered-input"
+                type="range"
+                id="brightness"
+                min="40"
+                max="200"
+                step="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <h1 class="title">LOGICAL REASONING QUESTION</h1>
+
+      <hr />
+
+      <!-- questions and choices -->
+
+      <div class="choices">
+        <!-- Q1 -->
+        <div class="question">
+          <p class="title">Q1</p>
+          <p class="content">
+            1. Xavier's aquarium houses more delta-tailed guppies than marbled
+            Mollies
+          </p>
+          <p class="content">
+            2. There are more marbled Mollies in the aquarium than there are
+            swordtails
+          </p>
+          <p class="content">
+            3. The aquarium contains more delta-tailed guppies than swordtails
+          </p>
+          <p class="content">
+            If statements 1 & 2 are true, then statement 3 is
+          </p>
+          <div class="answer">
+            <label>
+              <input type="radio" name="q1" value="correct" /> True
+            </label>
+            <label>
+              <input type="radio" name="q1" value="wrong" /> False
+            </label>
+            <label>
+              <input type="radio" name="q1" value="wrong" /> Insufficient
+              information
+            </label>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="question">
+          <p class="title">Q2</p>
+          <p class="content">
+            At university, three girls, Anne, Sophie, and Summer, are dating
+            three boys, Michael, Tito, andMorgan. Anne is dating Michael. Sophie
+            is not dating the physics major. Summer is not dating thetheatre
+            major. Michael is a biology major. Morgan is not majoring in
+            theatre.
+          </p>
+          <p class="content">
+            Which of the following statements is correct, based on the above
+            information?
+          </p>
+          <div class="answer">
+            <label>
+              <input type="radio" name="q2" value="wrong" /> Sophie is dating
+              Morgan
+            </label>
+            <label>
+              <input type="radio" name="q2" value="wrong" /> Anne is dating a
+              theatre major
+            </label>
+            <label>
+              <input type="radio" name="q2" value="correct" /> None of these
+            </label>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+
+        <div class="question">
+          <p class="title">Q3</p>
+          <p class="content">
+            Denise arrived at the birthday party 1 hour later than Kylie and 30
+            minutes before James.
+          </p>
+          <p class="content">
+            Melissa arrived at the birthday party 30 minutes earlier than Denise
+            and 45 minutes earlier than Sarah.
+          </p>
+          <p class="content">
+            Assuming the two statements above are true, is the statement given
+            below true?
+          </p>
+          <p class="content">
+            As James arrived, he found both Melissa and Denise enjoying the
+            party and learned that Sarah came30 minutes earlier.
+          </p>
+          <div class="answer">
+            <label> <input type="radio" name="q3" value="wrong" /> Yes </label>
+            <label> <input type="radio" name="q3" value="correct" /> No </label>
+            <label>
+              <input type="radio" name="q3" value="wrong" /> Insufficient
+              information
+            </label>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+
+        <div class="question">
+          <p class="title">Q4</p>
+          <p class="content">
+            Five cars are ready at the start line of a race.
+          </p>
+          <p class="content">
+            Car B is positioned to the right of Car A but is notoositioned next
+            to Car C.
+          </p>
+          <p class="content">
+            Car C is positioned next to Car D, which has Car B on its left side.
+          </p>
+          <p class="content">Car E ispositioned furthest from Car C.</p>
+          <p class="content">
+            Which car does not have a car to the left of it?
+          </p>
+          <div class="answer">
+            <label>
+              <input type="radio" name="q4" value="wrong" /> Car A
+            </label>
+            <label>
+              <input type="radio" name="q4" value="wrong" /> Car B
+            </label>
+            <label>
+              <input type="radio" name="q4" value="wrong" /> Car C
+            </label>
+            <label>
+              <input type="radio" name="q4" value="wrong" /> Car D
+            </label>
+            <label>
+              <input type="radio" name="q4" value="correct" /> Car E
+            </label>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+
+        <div class="question">
+          <p class="title">Q5</p>
+          <p class="content">
+            1. Gerald's novel is longer than the book David wrote, but shorter
+            than Gordon's novel.
+          </p>
+          <p class="content">
+            2. Thomas' novel is shorter than Gordon's book, but longer than
+            Gerald's.
+          </p>
+          <p class="content">3. David's book is shorter than Thomas' book.</p>
+          <p class="content">
+            If the first two statements are true. the third statement is
+          </p>
+          <div class="answer">
+            <label>
+              <input type="radio" name="q5" value="correct" /> True
+            </label>
+            <label>
+              <input type="radio" name="q5" value="wrong" /> False
+            </label>
+            <label>
+              <input type="radio" name="q5" value="wrong" /> Uncertain
+            </label>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="question">
+          <p class="title">Q6</p>
+          <p class="content">
+            1. Marsden and Pippa have four Labrador retriever dogs.
+          </p>
+          <p class="content">
+            2. Two of their dogs are yellow and two are chocolate.
+          </p>
+          <p class="content">3. Half of the dogs are females.</p>
+          <p class="content">
+            If these three statements are true, which of the following
+            statements must also be true?
+          </p>
+          <div class="answer">
+            <label>
+              <input type="radio" name="q6" value="wrong" /> The male dogs are
+              yellow
+            </label>
+            <label>
+              <input type="radio" name="q6" value="correct" /> Two of the dogs
+              are male
+            </label>
+            <label>
+              <input type="radio" name="q6" value="wrong" /> At least one of the
+              female dogs is chocolate
+            </label>
+          </div>
+        </div>
+
+        <button onclick="countResults()">Submit</button>
+        <p id="result"></p>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer bg-dark">
+        <div class="footer-left">
+          <p><a class="link" href="index.html">Home</a></p>
+          <p><a class="link" href="detective.html">Detective Novelist</a></p>
+          <p><a class="link" href="fingerprint.html">Fingerprint</a></p>
+          <p><a class="link" href="puzzle.html">Puzzle</a></p>
+          <p><a class="link" href="shop.html">Shop</a></p>
+          <p><a class="link" href="report.html">Report</a></p>
+        </div>
+
+        <div class="footer-middle">
+          <p>Contact with us</p>
+          <div>
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>Languages</p>
+          <p>English</p>
+          <p>Español</p>
+          <p>中文</p>
+          <p>Français</p>
+          <p>Deutsch</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="navbarfooter.js"></script>
+    <script src="puzzle.js"></script>
+  </body>
+</html>

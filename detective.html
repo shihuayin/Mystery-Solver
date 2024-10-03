@@ -1,0 +1,547 @@
+<html>
+  <head>
+    <title>Detective</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="detective.css" />
+    <link rel="stylesheet" href="navbarfooter.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item col-2">
+              <a
+                class="nav-link fw-bolder fs-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item col-4">
+              <a class="nav-link fw-bolder active fs-5" href="detective.html"
+                >Detective Novelist</a
+              >
+            </li>
+
+            <li class="nav-item col-3">
+              <a class="nav-link fw-bolder fs-5" href="fingerprint.html"
+                >Fingerprints</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="puzzle.html">Puzzle</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="shop.html">Shop</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="report.html">Report</a>
+            </li>
+          </ul>
+
+          <audio class="bgm" controls>
+            <source src="BGM.mp3" type="audio/mpeg" />
+          </audio>
+
+          <!-- Sidebar  -->
+          <button id="openSidebarBtn">Settings</button>
+
+          <div id="sidebar" class="bg-dark">
+            <div class="sidebar-content">
+              <p>Accessibility Settings</p>
+              <button id="mode-toggle">Dark/Light Mode</button>
+            </div>
+
+            <label class="text" for="brightness">Page Brightness</label>
+            <div class="container">
+              <input
+                class="centered-input"
+                type="range"
+                id="brightness"
+                min="40"
+                max="200"
+                step="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <h1 class="detective-title">DETECTIVE NOVELIST & WORKS</h1>
+
+      <hr />
+
+      <!-- 1 Arthur Conan Doyle-->
+
+      <div class="detective-card">
+        <!-- Left  -->
+        <div class="detective-card-left">
+          <!-- Image carousel -->
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/conandoyle1.jpeg"
+                  class="conandoyle-img"
+                  alt="Conandoyle-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/conandoyle2.jpeg"
+                  class="conandoyle-img"
+                  alt="Conandoyle-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/conandoyle3.jpeg"
+                  class="conandoyle-img"
+                  alt="Conandoyle-novel"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Left  -->
+
+        <div class="detective-card-right">
+          <h5 class="detective-card-title">Arthur Conan Doyle</h5>
+          <p class="detective-card-text">
+            Sir Arthur Conan Doyle (1859-1930) was a renowned British writer
+            best known for creating the fictional detective Sherlock Holmes.
+            Born on May 22, 1859, in Edinburgh, Scotland, Doyle was educated as
+            a physician and practiced medicine for a time. However, his true
+            passion lay in writing, and he eventually abandoned his medical
+            career to pursue literature full-time.
+          </p>
+          <p class="detective-card-text">
+            Doyle's most famous literary creation, Sherlock Holmes, made his
+            first appearance in the novel "A Study in Scarlet" (1887). Holmes
+            quickly became an iconic character in detective fiction, known for
+            his exceptional deductive reasoning and keen observation skills. The
+            character's popularity soared with subsequent works, including "The
+            Adventures of Sherlock Holmes" (1892) and "The Hound of the
+            Baskervilles" (1902).
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <hr class="divide centered-hr" />
+      </div>
+
+      <!-- 2 Agatha Christie -->
+
+      <div class="detective-card">
+        <div class="detective-card-left">
+          <div
+            id="carouselExampleControls1"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/agatha1.jpeg"
+                  class="conandoyle-img"
+                  alt="Agatha-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/agatha2.jpeg"
+                  class="conandoyle-img"
+                  alt="Agatha-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/agatha3.jpeg"
+                  class="conandoyle-img"
+                  alt="Agatha-novel"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="detective-card-right">
+          <h5 class="detective-card-title">Agatha Christie</h5>
+          <p class="detective-card-text">
+            Agatha Christie (1890-1976) was a British author widely regarded as
+            the "Queen of Mystery" and one of the most significant writers in
+            the detective fiction genre. Born on September 15, 1890, in Torquay,
+            Devon, England, Christie's works have had an unparalleled impact on
+            crime fiction and continue to captivate readers around the world.
+          </p>
+          <p class="detective-card-text">
+            Over the course of her career, Agatha Christie penned numerous
+            iconic works, including "Murder on the Orient Express" (1934),
+            "Death on the Nile" (1937), "And Then There Were None" (1939), and
+            "The Murder of Roger Ackroyd" (1926). Her mystery novels were known
+            for their ingenious plots, unexpected twists, and unforgettable
+            characters, making her a best-selling author during her lifetime and
+            beyond.
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <hr class="divide centered-hr" />
+      </div>
+
+      <!-- 3 Raymond Chandler -->
+
+      <div class="detective-card">
+        <div class="detective-card-left">
+          <div
+            id="carouselExampleControls2"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/raymond1.jpeg"
+                  class="conandoyle-img"
+                  alt="Raymond-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/raymond2.jpeg"
+                  class="conandoyle-img"
+                  alt="Raymond-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/raymond3.jpeg"
+                  class="conandoyle-img"
+                  alt="Raymond-novel"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="detective-card-right">
+          <h5 class="detective-card-title">Raymond Chandler</h5>
+          <p class="detective-card-text">
+            Raymond Chandler (1888-1959) was an influential American author,
+            best known for his contributions to the hardboiled detective fiction
+            genre. Born on July 23, 1888, in Chicago, Illinois, Chandler's works
+            had a profound impact on the development of crime fiction and
+            transformed the detective novel into a sophisticated and gritty art
+            form.
+          </p>
+          <p class="detective-card-text">
+            Some of Chandler's other notable works include "Farewell, My Lovely"
+            (1940), "The Long Goodbye" (1953), and "The Lady in the Lake"
+            (1943). Through his writing, Chandler tackled themes of corruption,
+            greed, and moral ambiguity, reflecting the societal anxieties of his
+            time.
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <hr class="divide centered-hr" />
+      </div>
+
+      <!-- 4 Edogawa Ranpo-->
+
+      <div class="detective-card">
+        <div class="detective-card-left">
+          <div
+            id="carouselExampleControls3"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/edogawa1.jpeg"
+                  class="conandoyle-img"
+                  alt="Edogawa-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/edogawa2.jpeg"
+                  class="conandoyle-img"
+                  alt="Edogawa-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/edogawa3.jpeg"
+                  class="conandoyle-img"
+                  alt="Edogawa-novel"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="detective-card-right">
+          <h5 class="detective-card-title">Edogawa Ranpo</h5>
+          <p class="detective-card-text">
+            Edogawa Ranpo (1894-1965) was a prominent Japanese author and a
+            pioneer of modern mystery and detective fiction in Japan. Ranpo is
+            often referred to as the "Father of Japanese Mystery Fiction." He
+            played a crucial role in popularizing the mystery genre in Japan
+            during the early 20th century, introducing elements of psychological
+            suspense, macabre themes, and intricate puzzles in his stories. His
+            distinctive writing style and unique storytelling techniques
+            captivated readers, making him a literary icon.
+          </p>
+          <p class="detective-card-text">
+            One of Ranpo's most famous literary creations is the detective
+            Kogoro Akechi, a brilliant and enigmatic sleuth who first appeared
+            in the story "The Case of the Murder on D. Hill" (1925). Akechi
+            became a recurring character in many of Ranpo's works and is often
+            considered the Japanese equivalent of Sherlock Holmes.
+          </p>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <hr class="divide centered-hr" />
+      </div>
+
+      <!-- 5 Lawrence Block-->
+
+      <div class="detective-card">
+        <div class="detective-card-left">
+          <div
+            id="carouselExampleControls4"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/lawrence1.jpeg"
+                  class="conandoyle-img"
+                  alt="Lawrence-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/lawrence2.jpeg"
+                  class="conandoyle-img"
+                  alt="Lawrence-novel"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/lawrence3.jpeg"
+                  class="conandoyle-img"
+                  alt="Lawrence-novel"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls4"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls4"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="detective-card-right">
+          <h5 class="detective-card-title">Lawrence Block</h5>
+          <p class="detective-card-text">
+            Lawrence Block (born June 24, 1938) is a prolific and highly
+            acclaimed American author, best known for his contributions to the
+            crime fiction and mystery genres. Born in Buffalo, New York, Block's
+            writing career spans over several decades, and he has earned a
+            devoted following for his captivating storytelling and memorable
+            characters.
+          </p>
+          <p class="detective-card-text">
+            Block's most famous and enduring creation is Matthew Scudder, an
+            unlicensed private investigator and recovering alcoholic based in
+            New York City. The character of Matthew Scudder first appeared in
+            "The Sins of the Fathers" (1976) and went on to become the
+            protagonist of numerous successful novels, including "A Walk Among
+            the Tombstones" (1992) and "A Drop of the Hard Stuff" (2011).
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer section -->
+
+      <footer class="footer bg-dark">
+        <div class="footer-left">
+          <p><a class="link" href="index.html">Home</a></p>
+          <p><a class="link" href="author.html">Detective Novelist</a></p>
+          <p><a class="link" href="fingerprint.html">Fingerprint</a></p>
+          <p><a class="link" href="puzzle.html">Puzzle</a></p>
+          <p><a class="link" href="shop.html">Shop</a></p>
+          <p><a class="link" href="report.html">Report</a></p>
+        </div>
+
+        <div class="footer-middle">
+          <p>Contact with us</p>
+          <div>
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>Languages</p>
+          <p>English</p>
+          <p>Español</p>
+          <p>中文</p>
+          <p>Français</p>
+          <p>Deutsch</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="detective.js"></script>
+    <script src="navbarfooter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <title>Detective</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="fingerprint.css" />
+    <link rel="stylesheet" href="navbarfooter.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item col-2">
+              <a
+                class="nav-link fw-bolder fs-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item col-4">
+              <a class="nav-link fw-bolder fs-5" href="detective.html"
+                >Detective Novelist</a
+              >
+            </li>
+
+            <li class="nav-item col-3">
+              <a class="nav-link fw-bolder active fs-5" href="fingerprint.html"
+                >Fingerprints</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="puzzle.html">Puzzle</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="shop.html">Shop</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="report.html">Report</a>
+            </li>
+          </ul>
+
+          <audio class="bgm" controls>
+            <source src="BGM.mp3" type="audio/mpeg" />
+          </audio>
+
+          <button id="openSidebarBtn">Settings</button>
+
+          <div id="sidebar" class="bg-dark">
+            <div class="sidebar-content">
+              <p>Accessibility Settings</p>
+              <button id="mode-toggle">Dark/Light Mode</button>
+            </div>
+
+            <label class="text" for="brightness">Page Brightness</label>
+            <div class="container">
+              <input
+                class="centered-input"
+                type="range"
+                id="brightness"
+                min="40"
+                max="200"
+                step="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar -->
+
+    <div class="main">
+      <!-- Title for the fingerprint page -->
+      <h1 class="finger-title">HOW TO FIND FINGERPRINT?</h1>
+
+      <!-- powder -->
+      <div class="fp-card one">
+        <div class="fp-card-left">
+          <img
+            class="fp-card-img"
+            id="powder"
+            src="images/powder1.jpeg"
+            alt="Powder-method"
+          />
+          <button class="view" id="changepowderButton">
+            Click Here View Method
+          </button>
+        </div>
+
+        <div class="fp-card-right">
+          <h5 class="fp-card-title">Powder</h5>
+          <p class="fp-card-text">
+            Fingerprint powders are fine powders used, in conjunction with
+            fingerprint brushes, by crime scene investigators and other law
+            enforcement personnel to search for and enhance latent/invisible
+            fingerprints that can be used to determine identification. This
+            method of fingerprint development commonly referred to as dusting
+            for fingerprints, involves the adherence of the powder particles to
+            the moisture and sweat secretions deposited on to surfaces by the
+            raised ridges on fingers, palms, or soles of feet designed for grip,
+            called friction ridges.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ninhydrin -->
+
+      <div class="fp-card two">
+        <div class="fp-card-right">
+          <h5 class="fp-card-title">Ninhydrin</h5>
+          <p class="fp-card-text">
+            Ninhydrin (2,2-dihydroxyindane-1,3-dione) is an organic compound
+            with the formula. It is used to detect ammonia and amines. Upon
+            reaction with these amines, ninhydrin gets converted into deep blue
+            or purple derivatives, which are called Ruhemann's purple. Ninhydrin
+            is most commonly used to detect fingerprints in forensic cases, as
+            the terminal amines of lysine residues in peptides and proteins
+            sloughed off in fingerprints react with ninhydrin.
+          </p>
+        </div>
+
+        <div class="fp-card-left">
+          <img
+            class="fp-card-img"
+            id="ninhydrin"
+            src="images/ninhydrin1.jpeg"
+            alt="Ninhydrin-method"
+          />
+          <button class="view" id="changeninhydrinButton">
+            Click Here View Method
+          </button>
+        </div>
+      </div>
+
+      <!-- Cyanoacrylate -->
+
+      <div class="fp-card three">
+        <div class="fp-card-left">
+          <img
+            class="fp-card-img"
+            id="cyanoacrylate"
+            src="images/cyanoacrylate1.jpeg"
+            alt="Cyanoacrylate-method"
+          />
+          <button class="view" id="changecyanoacrylateButton">
+            Click Here View Method
+          </button>
+        </div>
+
+        <div class="fp-card-right">
+          <h5 class="fp-card-title">Cyanoacrylate</h5>
+          <p class="fp-card-text">
+            Cyanoacrylate is used as a forensic tool to capture latent
+            fingerprints on non-porous surfaces like glass, plastic, etc.
+            Cyanoacrylate is warmed to produce fumes that react with the
+            invisible fingerprint residues and atmospheric moisture to form a
+            white polymer (polycyanoacrylate) on the fingerprint ridges. The
+            ridges can then be recorded. The developed fingerprints are, on most
+            surfaces (except on white plastic or similar), visible to the naked
+            eye. Invisible or poorly visible prints can be further enhanced by
+            applying a luminescent or non-luminescent stain.
+          </p>
+        </div>
+      </div>
+
+      <!-- laser -->
+
+      <div class="fp-card four">
+        <div class="fp-card-right">
+          <h5 class="fp-card-title">Laser or LED devices</h5>
+          <p class="fp-card-text">
+            It is becoming more commonplace for investigators to examine any
+            likely surfaces (doors, doorknobs, windows, railings, etc.) with an
+            alternate light source. These are laser or LED devices that emit a
+            particular wavelength, or spectrum, of light. Some devices have
+            different filters to provide a variety of spectra that can be
+            photographed or further processed with powders or dye stains. For
+            example, investigators may use a blue light with an orange filter to
+            find latent prints on desks, chairs, computer equipment or other
+            objects at the scene of a break-in.
+          </p>
+        </div>
+
+        <div class="fp-card-left">
+          <img
+            class="fp-card-img"
+            id="laser"
+            src="images/laser1.jpeg"
+            alt="Laser-method"
+          />
+          <button class="view" id="changelaserButton">
+            Click Here View Method
+          </button>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="footer bg-dark">
+        <div class="footer-left">
+          <p><a class="link" href="index.html">Home</a></p>
+          <p><a class="link" href="detective.html">Detective Novelist</a></p>
+          <p><a class="link" href="fingerprint.html">Fingerprint</a></p>
+          <p><a class="link" href="puzzle.html">Puzzle</a></p>
+          <p><a class="link" href="shop.html">Shop</a></p>
+          <p><a class="link" href="report.html">Report</a></p>
+        </div>
+
+        <div class="footer-middle">
+          <p>Contact with us</p>
+          <div>
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>Languages</p>
+          <p>English</p>
+          <p>Español</p>
+          <p>中文</p>
+          <p>Français</p>
+          <p>Deutsch</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="navbarfooter.js"></script>
+    <script src="fingerprint.js"></script>
+  </body>
+</html>

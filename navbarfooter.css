@@ -1,0 +1,139 @@
+.bgm {
+  height: 30px;
+  width: 250px;
+  margin-right: 30px;
+}
+
+/* navbar */
+
+#openSidebarBtn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Off-screen initially */
+  width: 300px;
+  height: 100%;
+  background-color: #f1f1f1;
+  transition: right 0.3s ease;
+  z-index: 1001;
+}
+
+.sidebar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar-content #mode-toggle {
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-content p {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+input[type="range"] {
+  width: 85%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #f0f0f0;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.footer {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer-left {
+  margin-left: 120px;
+  font-size: 20px;
+}
+
+.link {
+  color: inherit;
+}
+
+.link:hover {
+  color: darkgray;
+}
+
+.footer-middle {
+  font-size: 20px;
+  text-align: center;
+}
+
+.fab {
+  padding: 20px;
+  display: flex;
+}
+
+.footer-right {
+  margin-right: 120px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .footer-middle,
+  .footer-right {
+    display: none;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 70px;
+  }
+
+  .footer-left a {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,109 @@
+:root {
+  --bg-color-light: #fff;
+  --bg-color-dark: #696969;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: var(--bg-color-light) !important;
+  color: var(--text-color-light);
+}
+
+/* Dark mode styles */
+body {
+  background-color: var(--bg-color-dark) !important;
+  color: var(--text-color-dark);
+}
+
+h1 {
+  text-align: center;
+}
+
+/*  fingerprint page title */
+.finger-title {
+  margin-top: 0px;
+}
+
+.fp-card {
+  display: flex;
+  border: 1.5px dotted black;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.fp-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fp-card-img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.view {
+  margin-top: 10px;
+}
+
+.fp-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fp-card-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.fp-card-text {
+  font-size: 18px;
+}
+
+/* Small scale (responsive) styles for screens up to 768px width */
+@media (max-width: 768px) {
+  .bgm {
+    display: none;
+  }
+
+  #openSidebarBtn {
+    display: none;
+  }
+
+  .fp-card {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one .fp-card-left {
+    order: 2;
+  }
+
+  .three .fp-card-left {
+    order: 2;
+  }
+  .fp-card-text {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1008px) {
+  #openSidebarBtn {
+    display: none;
+  }
+
+  .bgm {
+    display: none;
+  }
+}

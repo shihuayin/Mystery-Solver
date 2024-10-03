@@ -1,0 +1,267 @@
+<html>
+  <head>
+    <title>Detective</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbarfooter.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder active fs-5" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item col-4">
+              <a class="nav-link fw-bolder fs-5" href="detective.html"
+                >Detective Novelist</a
+              >
+            </li>
+
+            <li class="nav-item col-3">
+              <a class="nav-link fw-bolder fs-5" href="fingerprint.html"
+                >Fingerprints</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="puzzle.html">Puzzle</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="shop.html">Shop</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="report.html">Report</a>
+            </li>
+          </ul>
+
+          <!-- Background music player -->
+
+          <audio class="bgm" controls>
+            <source src="BGM.mp3" type="audio/mpeg" />
+          </audio>
+
+          <!-- Sidebar-->
+
+          <button id="openSidebarBtn">Settings</button>
+
+          <div id="sidebar" class="bg-dark">
+            <div class="sidebar-content">
+              <p>Accessibility Settings</p>
+              <button id="mode-toggle">Dark/Light Mode</button>
+            </div>
+
+            <label class="text" for="brightness">Page Brightness</label>
+            <div class="container">
+              <input
+                class="centered-input"
+                type="range"
+                id="brightness"
+                min="40"
+                max="200"
+                step="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <!-- Banner -->
+      <div class="banner">
+        <img src="images/banner.jpeg" alt="Home page banner" />
+        <div class="text-overlay">Need you to become the detective</div>
+      </div>
+
+      <!-- Part one section -->
+
+      <div class="part-one">
+        <div class="intro">
+          <p class="title">Reasoning</p>
+          <p class="content">
+            In the realm of logical thinking, two fundamental approaches stand
+            out: inductive reasoning and deductive reasoning. These two methods
+            serve as cornerstones for how we process information, draw
+            conclusions, and make sense of the world around us.
+          </p>
+        </div>
+
+        <div class="intro-video">
+          <iframe
+            class="video"
+            src="video/video1.mp4"
+            title="INDUCTIVE AND DEDUCTIVE REASONING"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Part two section -->
+
+      <div class="part-two">
+        <p class="novel-title">Popular Posts</p>
+
+        <!-- post1 -->
+
+        <div class="post">
+          <div class="post-left">
+            <img class="postImg" src="images/post1.jpg" alt="Find Evidence" />
+          </div>
+
+          <div class="post-right">
+            <p class="post-title">How to Find Evidence ?</p>
+            <p class="post-content">
+              Interview witnesses to obtain firsthand accounts and collaborate
+              with experts like forensic analysts. Utilize technology like UV
+              lights, metal detectors, and chemical tests to uncover hidden
+              evidence. Check for surveillance footage and communication records
+              that might provide insights. Ensure a proper chain of custody by
+              carefully documenting and storing evidence. Preserve trace
+              evidence like hair, fibers, and fingerprints, which could link
+              individuals to the scene.
+            </p>
+          </div>
+        </div>
+
+        <!-- post2 -->
+
+        <div class="post">
+          <div class="post-left">
+            <img
+              class="postImg"
+              src="images/post2.webp"
+              alt="Detective daily work"
+            />
+          </div>
+
+          <div class="post-right">
+            <p class="post-title">What does a detective do ?</p>
+            <p class="post-content">
+              Detectives employ a range of skills and techniques to conduct
+              their investigations. They meticulously analyze crime scenes,
+              gather and analyze forensic evidence, interview witnesses and
+              suspects, and collaborate with other experts, such as forensic
+              scientists or psychologists. They possess excellent
+              problem-solving abilities, critical thinking skills, and attention
+              to detail to connect the dots and unravel the mysteries
+              surrounding criminal acts.
+            </p>
+          </div>
+        </div>
+
+        <!-- post3 -->
+
+        <div class="post">
+          <div class="post-left">
+            <img class="postImg" src="images/ninhydrin1.jpeg" alt="Ninhydrin" />
+          </div>
+
+          <div class="post-right">
+            <p class="post-title">Four Methods for Finding Fingerprints</p>
+            <p class="post-content">
+              Powder, combined with brushes, reveals latent prints by adhering
+              to moisture on friction ridges. Ninhydrin reacts with amines in
+              fingerprints, turning into Ruhemann's purple, aiding detection.
+              Cyanoacrylate fumes react with residues, forming visible prints on
+              non-porous surfaces. Laser or LED devices emit specific light
+              wavelengths, exposing prints that can be enhanced with powders or
+              dyes. These techniques enable crime scene investigators to uncover
+              and enhance fingerprints for identification and forensic analysis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Part three section -->
+
+        <div class="part-three">
+          <p class="novel-title">NOVEL WORKS</p>
+          <div style="text-align: center">
+            <hr class="divide centered-hr" />
+          </div>
+          <div class="novel-display">
+            <img
+              class="novelpic"
+              src="images/agatha3.jpeg"
+              alt="Agatha novel"
+            />
+            <img
+              class="novelpic"
+              src="images/conandoyle3.jpeg"
+              alt="Conandoyle novel"
+            />
+            <img
+              class="novelpic"
+              src="images/lawrence3.jpeg"
+              alt="Lawrence novel"
+            />
+            <img
+              class="novelpic"
+              src="images/edogawa3.jpeg"
+              alt="Edogawa novel"
+            />
+            <img
+              class="novelpic"
+              src="images/raymond2.jpeg"
+              alt="Raymond novel"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer  -->
+
+      <footer class="footer bg-dark">
+        <!-- Footer links -->
+        <div class="footer-left">
+          <p><a class="link" href="index.html">Home</a></p>
+          <p><a class="link" href="detective.html">Detective Novelist</a></p>
+          <p><a class="link" href="fingerprint.html">Fingerprint</a></p>
+          <p><a class="link" href="puzzle.html">Puzzle</a></p>
+          <p><a class="link" href="shop.html">Shop</a></p>
+          <p><a class="link" href="report.html">Report</a></p>
+        </div>
+
+        <!-- Contact with us -->
+        <div class="footer-middle">
+          <p>Contact with us</p>
+          <div>
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+        </div>
+
+        <!-- Language options -->
+        <div class="footer-right">
+          <p>Languages</p>
+          <p>English</p>
+          <p>Español</p>
+          <p>中文</p>
+          <p>Français</p>
+          <p>Deutsch</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="navbarfooter.js"></script>
+  </body>
+</html>

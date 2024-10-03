@@ -1,0 +1,111 @@
+:root {
+  --bg-color-light: #fff;
+  --bg-color-dark: #696969;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: var(--bg-color-light) !important;
+  color: var(--text-color-light);
+}
+
+/* Dark mode styles */
+body {
+  background-color: var(--bg-color-dark) !important;
+  color: var(--text-color-dark);
+}
+
+h1 {
+  text-align: center;
+}
+
+.detective-title {
+  margin-top: 0px;
+}
+
+/* card */
+
+.detective-card {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.detective-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 60px;
+}
+
+/* Define dimensions for the detective image */
+.conandoyle-img {
+  width: 300px;
+  height: 400px;
+}
+
+.detective-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detective-card-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.detective-card-text {
+  font-size: 18px;
+}
+
+.centered-hr {
+  width: 50%;
+  margin: 0 auto;
+  border-top: 5px dotted black;
+  background-color: transparent;
+}
+
+/* Small scale (responsive) styles for screens up to 768px width */
+@media (max-width: 768px) {
+  .bgm {
+    display: none;
+  }
+
+  #openSidebarBtn {
+    display: none;
+  }
+
+  .detective-card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detective-card-left {
+    margin-left: 50px;
+  }
+
+  .detective-card-right {
+    text-align: justify;
+  }
+
+  .divide {
+    display: none;
+  }
+}
+
+@media (max-width: 1008px) {
+  #openSidebarBtn {
+    display: none;
+  }
+
+  .bgm {
+    display: none;
+  }
+}

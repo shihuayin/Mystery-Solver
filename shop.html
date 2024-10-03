@@ -1,0 +1,212 @@
+<html>
+  <head>
+    <title>Detective</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="navbarfooter.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item col-2">
+              <a
+                class="nav-link fw-bolder fs-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item col-4">
+              <a class="nav-link fw-bolder fs-5" href="detective.html"
+                >Detective Novelist</a
+              >
+            </li>
+
+            <li class="nav-item col-3">
+              <a class="nav-link fw-bolder fs-5" href="fingerprint.html"
+                >Fingerprints</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="puzzle.html">Puzzle</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder active fs-5" href="shop.html"
+                >Shop</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="report.html">Report</a>
+            </li>
+          </ul>
+
+          <audio class="bgm" controls>
+            <source src="BGM.mp3" type="audio/mpeg" />
+          </audio>
+
+          <button id="openSidebarBtn">Settings</button>
+
+          <div id="sidebar" class="bg-dark">
+            <div class="sidebar-content">
+              <p>Accessibility Settings</p>
+              <button id="mode-toggle">Dark/Light Mode</button>
+            </div>
+
+            <label class="text" for="brightness">Page Brightness</label>
+            <div class="container">
+              <input
+                class="centered-input"
+                type="range"
+                id="brightness"
+                min="40"
+                max="200"
+                step="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar -->
+
+    <div class="main">
+      <div class="shop">
+        <div class="shop-left">
+          <p>Filter By Price</p>
+          <div id="priceButtons">
+            <button data-range="10-20">10$ - 20$</button>
+            <button data-range="20-30">20$ - 30$</button>
+            <button data-range="30-40">30$ - 40$</button>
+            <button data-range="all">Show All</button>
+          </div>
+        </div>
+
+        <div class="shop-right" id="bookList">
+          <!-- 1 Sherlock Holmes cap -->
+
+          <div class="con" data-price="15">
+            <div class="div1">
+              <img src="images/product1.webp" alt="Cap" />
+            </div>
+
+            <div class="div2">
+              <p>Sherlock Holmes cap</p>
+              <p>Price : 15</p>
+            </div>
+          </div>
+
+          <!-- 2 Hunt A Killer - Tumbler -->
+          <div class="con" data-price="15">
+            <div class="div1">
+              <img src="images/product2.webp" alt="Tumbler" />
+            </div>
+
+            <div class="div2">
+              <p>Hunt A Killer - Tumbler</p>
+              <p>Price : 18</p>
+            </div>
+          </div>
+
+          <!-- 3 Murder Board Kit -->
+
+          <div class="con" data-price="25">
+            <div class="div1">
+              <img src="images/product3.webp" alt="Murder Board Kit" />
+            </div>
+
+            <div class="div2">
+              <p>Murder Board Kit</p>
+              <p>Price : 23</p>
+            </div>
+          </div>
+
+          <!-- 4 Detective Tote Bag -->
+          <div class="con" data-price="25">
+            <div class="div1">
+              <img src="images/product4.jpeg" alt="Bag" />
+            </div>
+
+            <div class="div2">
+              <p>Detective Tote Bag</p>
+              <p>Price : 28</p>
+            </div>
+          </div>
+
+          <!-- 5 Detective Keychain -->
+          <div class="con" data-price="35">
+            <div class="div1">
+              <img src="images/product5.jpeg" alt="Keychain" />
+            </div>
+
+            <div class="div2">
+              <p>Detective Keychain</p>
+              <p>Price : 32</p>
+            </div>
+          </div>
+
+          <!-- 6 Darkside Detective T-shirt -->
+
+          <div class="con" data-price="35">
+            <div class="div1">
+              <img src="images/product6.jpeg" alt="T-shirt" />
+            </div>
+
+            <div class="div2">
+              <p>Darkside Detective T-shirt</p>
+              <p>Price : 38</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer bg-dark">
+        <div class="footer-left">
+          <p><a class="link" href="index.html">Home</a></p>
+          <p><a class="link" href="detective.html">Detective Novelist</a></p>
+          <p><a class="link" href="fingerprint.html">Fingerprint</a></p>
+          <p><a class="link" href="puzzle.html">Puzzle</a></p>
+          <p><a class="link" href="shop.html">Shop</a></p>
+          <p><a class="link" href="report.html">Report</a></p>
+        </div>
+
+        <div class="footer-middle">
+          <p>Contact with us</p>
+          <div>
+            <i class="fab fa-facebook fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>Languages</p>
+          <p>English</p>
+          <p>Español</p>
+          <p>中文</p>
+          <p>Français</p>
+          <p>Deutsch</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="shop.js"></script>
+    <script src="navbarfooter.js"></script>
+  </body>
+</html>

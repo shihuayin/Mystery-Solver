@@ -1,0 +1,351 @@
+<html>
+  <head>
+    <title>Detective</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="report.css" />
+    <link rel="stylesheet" href="navbarfooter.css" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item col-4">
+              <a class="nav-link fw-bolder fs-5" href="detective.html"
+                >Detective Novelist</a
+              >
+            </li>
+
+            <li class="nav-item col-3">
+              <a class="nav-link fw-bolder fs-5" href="fingerprint.html"
+                >Fingerprints</a
+              >
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="puzzle.html">Puzzle</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5" href="shop.html">Shop</a>
+            </li>
+
+            <li class="nav-item col-2">
+              <a class="nav-link fw-bolder fs-5 active" href="report.html">Report</a>
+            </li>
+          </ul>
+
+          <audio class="bgm" controls>
+            <source src="BGM.mp3" type="audio/mpeg" />
+          </audio>
+
+          <button id="openSidebarBtn">Settings</button>
+
+          <div id="sidebar" class="bg-dark">
+            <!-- Sidebar content-->
+            <div class="sidebar-content">
+              <p>Accessibility Settings</p>
+              <button id="mode-toggle">Dark/Light Mode</button>
+            </div>
+
+            <label class="text" for="brightness">Page Brightness</label>
+            <div class="container">
+              <input
+                class="centered-input"
+                type="range"
+                id="brightness"
+                min="40"
+                max="200"
+                step="10"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar -->
+
+
+    <!--about me  -->
+<div class="card introduction">
+  <p class="title">About Me</p>
+  <p class="title">Yin Shihua</p>
+  
+  
+</div>
+
+<!--introduction  -->
+<div class="card introduction">
+  <p class="title">Introduction</p>
+  <p class="title">What is the essential story being told by your site and what type of structure did you choose to implement?</p>
+  <p class="content">Are you obsessed with the mystery? Do you enjoy challenging your mind and solving complex puzzles step by step? Whether you're a fan of detective fiction or a fan of puzzle games, this detective web site is the perfect place to explore the mysterious world. To achieve this goal, each page has a different layout and content to attract and interest users. </p>
+  <ul>
+    <li class="content">Home Page: about the introduction of deductive reasoning, to become a detective you need to have what conditions.</li>
+    <li class="content">Detective Novelist Page: introduce the writing style and representative works of five detective fiction writers.</li>
+    <li class="content">Fingerprint page: four methods and principles for finding fingerprints.</li>
+    <li class="content">Puzzle page: Six reasoning test questions, you can see the final score after completion.</li>
+    <li class="content">Merchandise page: you can buy detective-themed items such as water glasses and key chains and so on.</li>
+  </ul>
+</div>
+
+<!--Inspiration  -->
+<div class="card introduction">
+  <p class="title">Inspiration</p>
+  <p class="title">State 3 things that have inspired you when creating your website.</p>
+
+<ul>
+  <li class="content">“Detective Conan” is a cartoon by あおやまごうしょう. It's about a high school detective, Jimmy Kudo, who narrows himself down after being drugged by a dark group, and then tries to investigate the group and crack various other cases to find a cure that will restore him to his former self. It is not only a fascinating story, but also the inspiration of many people's reasoning.</li>
+  <li class="content">Arthur Conan Doyle, the renowned British author, is best known for his Sherlock Holmes series, which portrays the adventures of the brilliant detective Sherlock Holmes and his assistant John H. Watson as they investigate various cases. Each story is filled with enigmas, deduction, and awe-inspiring logical reasoning. Through the tales of Sherlock Holmes, Conan Doyle seamlessly melds logical deduction with the art of storytelling. His works demonstrate that deduction is not only a practical skill but can also be portrayed as profound characters and emotions within literature.</li>
+  <li class="content">Sleuthsayers, a captivating online haven where mystery enthusiasts gather to delve into the world of crime fiction, detective tales, and everything in between. This unique platform serves as a vibrant hub for writers, critics, and fans who share a common passion for unraveling mysteries and dissecting the intricacies of detective narratives.</li>
+</ul>
+</div>
+
+
+<!--Accessibility  -->
+
+<div class="card introduction">
+  <p class="title">Accessibility</p>
+  <p class="title">State 3 ways in which your site is accessible.</p>
+
+<ul>
+  <li class="content">The website is designed to accommodate individuals with limited visual capabilities by offering Light and Dark Mode themes. Users can select the color scheme that's most comfortable for them, reducing eye strain and enhancing readability.</li>
+  <li class="content">The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</li>
+  <li class="content">By offering content in multiple languages, the website can reach a global audience, expanding website's reach and impact. Users from different countries and cultures can engage with the content more effectively.</li>
+</ul>
+</div>
+
+<!--Usability  -->
+
+<div class="card introduction">
+  <p class="title">Usability</p>
+  <p class="title">State 3 ways in which you considered the usability of your site. </p>
+
+<ul>
+  <li class="content">Navigation and Information Architecture: The website's layout should guide users seamlessly from one section to another, making it easy to find relevant content. Clear labels, logical categories, and a user-friendly menu contribute to an efficient browsing experience.</li>
+  <li class="content">Responsive Design: Usability extends to different devices and screen sizes, such as desktops and smartphones. This enables users to access and interact with the site comfortably regardless of the device they're using, enhancing overall usability browsing experience.</li>
+  <li class="content">User should be able to enhance their practice with some of the tools provided by the website. Each tool is intuitive and serves a single purpose, such as switching pictures, filtering prices, and checking test results.</li>
+</ul>
+</div>
+
+<!--Learning  -->
+
+<div class="card introduction">
+  <p class="title">Learning</p>
+  <p class="title">State 3 things you had to learn or find out to create your site. How did you achieve that?  </p>
+
+<ul>
+  <li class="content">Adding a variety of interactive features to the site is a big challenge, such as filtering prices and statistical answers. I went through the basic implementation process at W3 schools and saw some examples of YouTube videos that led to these interactions. Of course there were some surprises along the way, and I learned how to fix them on Stack Overflow.</li>
+  <li class="content">The goal of website accessibility is to make the online experience inclusive and usable for everyone. I learned a lot from WCAG, it provides a set of guidelines that cover various aspects of web design and development, ranging from text alternatives for images to keyboard navigation, color contrast, and more.</li>
+  <li class="content">It took me a long time to find the right tool for making Wireframes, and I found Balsamiq Wireframes. It's particularly useful in the early stages of the design process when focusing on ideation, concept validation, and initial user feedback. I quickly finished the Wireframes of the web page by taking advantage of the elements already that had been designed well.</li>
+</ul>
+</div>
+
+
+<!--Evaluation I -->
+
+<div class="card introduction">
+  <p class="title">Evaluation I</p>
+  <p class="title">What aspects of your work do you think were particularly successful? Why?</p>
+
+<ul>
+  <li class="content">I am satisfied with the price filtering feature of the Merchandise page. It dynamically displays merchandise that fall within the selected price range and hides others. The use of event listeners, DOM manipulation, and other functions demonstrates how to interact with and modify the appearance of elements on a webpage based on user interactions.</li>
+  <li class="content">I am also pleased with the color scheme of the site. Black, white and gray are the main colors of the site. They are usually associated with themes such as detective, reasoning and mystery, creating an atmosphere of mystery and suspense.</li>
+  <li class="content">Whether it is the overall style of design, background music rendering, or the richness of content, I believe the site is clear, intuitive, practical. People who are interested in detective or mystery novels can gain a lot of knowledge and fun here.</li>
+</ul>
+</div>
+
+<!--Evaluation II  -->
+
+<div class="card introduction">
+  <p class="title">Evaluation II</p>
+  <p class="title">What aspects of your work could be improved? How might you do things differently another time?</p>
+
+<ul>
+  <li class="content">Although the Puzzle page multiple-choice statistics of the number of correct and wrong answers, but in fact does not point out which several answers are correct, which several answers are wrong. Subsequent improvements could include a feature that shows whether each answer is right or wrong.</li>
+  <li class="content">Mastering the intricacies of display responsiveness, screen sizes, and CSS implementation can indeed pose challenges, particularly when encountering unfamiliar properties like "relative" or "absolute" . On small screens, the phenomenon of elements spilling out of their containers and a disrupted navigation bar underscore the importance of responsive design. Addressing these issues involves embracing CSS properties effectively, but it is clearly not that flexible yet.</li>
+</ul>
+</div>
+
+<!--Resources -->
+
+<div class="card introduction">
+  <p class="title">Resources</p>
+  <p class="title">What resources did you use in your work? List any sources of information, libraries, plugins, code or tools (you should also indicate inclusions from other sources within your code using comments)</p>
+
+<ul>
+  <li class="content">[1] Card · Bootstrap v5.0 https://getbootstrap.com/docs/5.0/components/card/</li>
+  <li class="content">[2] Navbar · Bootstrap v5.0 https://getbootstrap.com/docs/5.0/components/navbar/</li>
+
+  <li class="content">[3] W3 Schools, documentation of CSS https://www.w3schools.com/css/default.asp </li>
+  <li class="content">[4] HTML Accessibility https://www.w3schools.com/html/html_accessibility.asp </li>
+
+  <li class="content">[5] How to Make a Multiple Choice Quiz using HTML, CSS, and JavaScript https://www.youtube.com/watch?v=4Y-4Xb6FsRI</li>
+  <li class="content">[6] JavaScript filter() method https://daily-dev-tips.com/posts/javascript-filter-method/</li>
+
+
+  <li class="content">[7] HTML YouTube Videos https://www.w3schools.com/html/html_youtube.asp</li>
+  <li class="content">[8] JavaScript Events https://www.w3schools.com/js/js_events.asp</li>
+
+  <li class="content">[9] How TO - Responsive Sidebar https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp</li>
+  <li class="content">[10] Responsive Sidebar Menu in HTML CSS & JavaScript https://www.youtube.com/watch?v=bFvfqUMjvsA</li>
+
+  <li class="content">[11] How to Add Audio To A HTML Website https://www.youtube.com/watch?v=19oYJh3tYn4</li>
+  <li class="content">[12] WCAG 2 Overview https://www.w3.org/WAI/standards-guidelines/wcag/ </li>
+
+
+</ul>
+</div>
+
+<!--Appendices -->
+
+<!-- Site Map -->
+<div class="card introduction site-map">
+  <p class="title">Site Map</p>
+ 
+<div>
+  <img class="map" src="images/report/website/site map.png">
+</div>
+</div>
+
+
+
+
+ <!-- Wireframes -->
+
+<div class="card introduction">
+  <p class="title">Wireframes</p>
+
+  <li class="content">Homepage</li>
+  <div class="wireframe homepage">
+    <img class="wireframe-1" src="images/report/wireframe/New Wireframe 1.1.png">
+    <img class="wireframe-2" src="images/report/wireframe/New Wireframe 1.2.png">
+  </div>
+
+
+  <li class="content">Detective Novelist Page</li>
+  <div class="wireframe homepage">
+    <img class="wireframe-1" src="images/report/wireframe/New Wireframe 2.1.png">
+    <img class="wireframe-2" src="images/report/wireframe/New Wireframe 2.2.png">
+  </div>
+
+
+  <li class="content">Fingerprint page</li>
+  <div class="wireframe homepage">
+    <img class="wireframe-1" src="images/report/wireframe/New Wireframe 3.1.png">
+    <img class="wireframe-2" src="images/report/wireframe/New Wireframe 3.2.png">
+  </div>
+
+
+  <li class="content">Puzzle page</li>
+  <div class="wireframe homepage">
+    <img class="wireframe-1" src="images/report/wireframe/New Wireframe 4.1.png">
+    <img class="wireframe-2" src="images/report/wireframe/New Wireframe 4.2.png">
+  </div>
+
+
+
+  <li class="content">Shop page</li>
+  <div class="wireframe homepage">
+    <img class="wireframe-1" src="images/report/wireframe/New Wireframe 5.1.png">
+    <img class="wireframe-2" src="images/report/wireframe/New Wireframe 5.2.png">
+  </div>
+
+
+</div>
+
+
+  <!-- Mockups -->
+  <div class="card introduction">
+    <p class="title">Mockups</p>
+
+    <li class="content">Homepage</li>
+    <div class="wireframe homepage">
+      <img class="wireframe-1" src="images/report/website/1Page Title.png">
+      <img class="wireframe-2" src="images/report/website/1Page Title -  small.png">
+    </div>
+  
+  
+    <li class="content">Detective Novelist Page</li>
+    <div class="wireframe homepage">
+      <img class="wireframe-1" src="images/report/website/2Page Title.png">
+      <img class="wireframe-2" src="images/report/website/2Page Title - small.png">
+    </div>
+  
+  
+    <li class="content">Fingerprint page</li>
+    <div class="wireframe homepage">
+      <img class="wireframe-1" src="images/report/website/3Page Title.png">
+      <img class="wireframe-2" src="images/report/website/3Page Title - small.png">
+    </div>
+  
+  
+    <li class="content">Puzzle page</li>
+    <div class="wireframe homepage">
+      <img class="wireframe-1" src="images/report/website/4Page Title.png">
+      <img class="wireframe-2" src="images/report/website/4Page Title - small.png">
+    </div>
+  
+  
+  
+    <li class="content">Shop page</li>
+    <div class="wireframe homepage">
+      <img class="wireframe-1" src="images/report/website/5Page Title.png">
+      <img class="wireframe-2" src="images/report/website/5Page Title - small.png">
+    </div>
+
+  </div>
+
+
+
+<!-- footer -->
+    <footer class="footer bg-dark">
+      <div class="footer-left">
+        <p><a class="link" href="index.html">Home</a></p>
+        <p><a class="link" href="author.html">Detective Novelist</a></p>
+        <p><a class="link" href="fingerprint.html">Fingerprint</a></p>
+        <p><a class="link" href="puzzle.html">Puzzle</a></p>
+        <p><a class="link" href="shop.html">Shop</a></p>
+        <p><a class="link" href="report.html">Report</a></p>
+      </div>
+
+      <div class="footer-middle">
+        <p>Contact with us</p>
+        <div>
+          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-twitter fa-2x"></i>
+          <i class="fab fa-youtube fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p>Languages</p>
+        <p>English</p>
+        <p>Español</p>
+        <p>中文</p>
+        <p>Français</p>
+        <p>Deutsch</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="report.js"></script>
+  <script src="navbarfooter.js"></script>
+  </body>
+</html>
